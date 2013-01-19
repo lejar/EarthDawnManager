@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTreeWidget" name="mobTree">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>44</y>
+      <width>351</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="autoExpandDelay">
+     <number>-1</number>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Character</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Health</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Notes</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>50</y>
+      <width>581</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Stats">
+     <attribute name="title">
+      <string>Stats</string>
+     </attribute>
+     <widget class="QWidget" name="statsWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>301</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>281</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <widget class="QFrame" name="perFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>93</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="perLabel">
+              <property name="text">
+               <string>PER</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="perIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="strFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>92</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="strLabel">
+              <property name="text">
+               <string>STR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="strIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="wilFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>92</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="wilLabel">
+              <property name="text">
+               <string>WIL</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="wilIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="touFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>95</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="touLabel">
+              <property name="text">
+               <string>TOU</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="touIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QFrame" name="chaFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>96</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="chaLabel">
+              <property name="text">
+               <string>CHA</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="chaIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="dexFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>95</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="dexLabel">
+              <property name="text">
+               <string>DEX</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="dexIs">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>379</width>
+        <height>199</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>361</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QFrame" name="pDefFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>106</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="dexLabel_2">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>P. Def</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="pDef">
+                <property name="wrapping">
+                 <bool>false</bool>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="spDefFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>111</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QLabel" name="dexLabel_3">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>Sp Def</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spDef">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="maximum">
+                 <number>99</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="soDefFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>111</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="dexLabel_4">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>So Def</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="soDef">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QFrame" name="woundFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>11</y>
+               <width>142</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QLabel" name="dexLabel_5">
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>Wound Thr.</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="woundThreshIs">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="unconFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>159</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QLabel" name="dexLabel_6">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>Uncon. Rating</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="unconIs">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="deathFrame">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>154</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QLabel" name="dexLabel_7">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="whatsThis">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>Death Rating</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="deathIs">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>40</y>
+        <width>141</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="hpFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>95</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="hpLabel">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="hpIs">
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="woundFrame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>120</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <item>
+            <widget class="QLabel" name="woundLabel">
+             <property name="text">
+              <string>Wounds</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="woundIs">
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="karmaFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>120</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_21">
+           <item>
+            <widget class="QLabel" name="karmaLabel">
+             <property name="text">
+              <string>Karma</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="karmaIs">
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>300</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="initFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>95</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="initLabel">
+             <property name="text">
+              <string>Init</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="initIs">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="encumFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>113</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="encumLabel">
+             <property name="text">
+              <string>Encum</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="encumIs">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Items</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coming soon...</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_12">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_14"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>353</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="randomLayout">
+     <item>
+      <widget class="QPushButton" name="randomButton">
+       <property name="text">
+        <string>Roll Dice</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="randomLabel">
+       <property name="text">
+        <string>Step</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="randomStep">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>40</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="karmaCheck">
+       <property name="text">
+        <string>Karma</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="randomNumber">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Group"/>
+    <addaction name="actionOpen_Group"/>
+    <addaction name="actionImport_Group"/>
+    <addaction name="actionSave_Group"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAdd_New">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionAdd_Mob_Type"/>
+    <addaction name="actionAdd_Mob"/>
+    <addaction name="actionRemove_Mob"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Mob_to_DB"/>
+    <addaction name="actionRemove_Mob_from_DB"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionWindow_Options"/>
+   </widget>
+   <widget class="QMenu" name="menuGenerate">
+    <property name="title">
+     <string>Generate</string>
+    </property>
+    <addaction name="actionDice_Roll"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAdd_New"/>
+   <addaction name="menuGenerate"/>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionGroup">
+   <property name="text">
+    <string>Group</string>
+   </property>
+  </action>
+  <action name="actionAdd_Mob_Type">
+   <property name="text">
+    <string>Add Mob Type</string>
+   </property>
+  </action>
+  <action name="actionOpen_Group">
+   <property name="text">
+    <string>Open Group</string>
+   </property>
+  </action>
+  <action name="actionSave_Group">
+   <property name="text">
+    <string>Save Group</string>
+   </property>
+  </action>
+  <action name="actionNew_Group">
+   <property name="text">
+    <string>New Group</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionEdit_Mob_Type">
+   <property name="text">
+    <string>Edit Mob Type</string>
+   </property>
+  </action>
+  <action name="actionWindow_Options">
+   <property name="text">
+    <string>Database File Location</string>
+   </property>
+  </action>
+  <action name="actionSound_Options">
+   <property name="text">
+    <string>Sound Options</string>
+   </property>
+  </action>
+  <action name="actionDice_Roll">
+   <property name="text">
+    <string>Dice Roll</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="actionRandom_Type">
+   <property name="text">
+    <string>Random Type</string>
+   </property>
+  </action>
+  <action name="actionRandom_Name">
+   <property name="text">
+    <string>Random Name</string>
+   </property>
+  </action>
+  <action name="actionAdd_Mob">
+   <property name="text">
+    <string>Add Mob</string>
+   </property>
+  </action>
+  <action name="actionRemove_Mob">
+   <property name="text">
+    <string>Remove Mob</string>
+   </property>
+  </action>
+  <action name="actionImport_Group">
+   <property name="text">
+    <string>Import Group</string>
+   </property>
+  </action>
+  <action name="actionAdd_Mob_to_DB">
+   <property name="text">
+    <string>Add Mob to DB</string>
+   </property>
+  </action>
+  <action name="actionRemove_Mob_from_DB">
+   <property name="text">
+    <string>Remove Mob from DB</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
